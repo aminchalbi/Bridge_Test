@@ -1,0 +1,83 @@
+/* Style général pour la navbar */
+.navbar {
+  background-color: white; /* Fond blanc pour la navbar */
+  padding: 20px 20px; /* Espacement intérieur */
+  display: flex;
+  justify-content: space-between; /* Espacement entre les éléments gauche et droite */
+  align-items: center; /* Alignement vertical au centre */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère (optionnel) */
+  position: sticky; /* Barre fixe en haut lors du scroll (optionnel) */
+  top: 0;
+  z-index: 100;
+  height: 100px;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Largeur maximale de la navbar */
+  margin: 0 auto; /* Centrage horizontal */
+}
+
+/* Pour centrer le bouton au milieu */
+.navbar-middle {
+  display: flex;
+  justify-content: center; /* Centrer les éléments à l'intérieur */
+  align-items: center; /* Centrer verticalement */
+  flex-grow: 1; /* Permet au bouton de prendre tout l'espace disponible au centre */
+}
+
+/* Section gauche : Logo et texte */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.the-bridge-text {
+  font-size: 1.2rem; /* Taille du texte */
+  font-weight: bold; /* Texte en gras */
+  display: flex;
+  align-items: center;
+}
+
+.bridge-b {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.8rem;
+  margin-right: 5px;
+  color: #007bff;
+  font-weight: 700;
+  letter-spacing: -1px; /* Ajustez selon le rendu */
+}
+
+/* Logo */
+.navbar-logo {
+  max-height: 80px; /* Hauteur maximale du logo */
+}
+
+/* Style du bouton Admin */
+.admin-button {
+  padding: 8px 16px;
+  background-color: #f39c12; /* Couleur orange moderne */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-items: center;
+  text-decoration: none; /* Pour enlever le soulignement si le bouton est un lien */
+}
+
+/* Effet au survol du bouton */
+.admin-button:hover {
+  background-color: #e67e22; /* Couleur légèrement plus sombre au survol */
+}
+
+/* Effet de focus sur le bouton */
+.admin-button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(243, 156, 18, 0.7);
+}

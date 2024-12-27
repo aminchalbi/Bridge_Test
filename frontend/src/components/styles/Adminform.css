@@ -1,0 +1,83 @@
+/* Style global du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Champs de saisie */
+form input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Boutons généraux */
+form button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+}
+
+/* Bouton Ajouter (Vert) */
+form button:not(:last-child) {
+    background-color: #28a745; /* Vert */
+}
+
+form button:not(:last-child):hover {
+    background-color: #218838;
+}
+
+/* Bouton Modifier (Bleu) */
+form button:only-child {
+    background-color: #007bff; /* Bleu */
+}
+
+form button:only-child:hover {
+    background-color: #0056b3;
+}
+
+/* Bouton Supprimer (Rouge) */
+form button:last-child {
+    background-color: green; /* Rouge */
+}
+
+form button:last-child:hover {
+    background-color: #a71d2a;
+}
+
+/* Alignement des placeholders */
+form input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Animation pour le focus */
+form input:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

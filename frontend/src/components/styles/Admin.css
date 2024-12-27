@@ -1,0 +1,85 @@
+/* Centrer le tableau dans la page */
+table {
+    margin: 2rem auto;
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style de l'en-tête */
+table thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Style des cellules */
+table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Style des lignes */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Style pour les boutons dans le tableau */
+table button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+table button:hover {
+    transform: scale(1.05);
+}
+
+body{
+    background-color:whitesmoke;
+}
+/* Style du titre h1 */
+h1 {
+    font-size: 2.7rem;
+    color: #2c3e50; /* Couleur moderne */
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px;
+    background: linear-gradient(100deg, #f39c12, #e74c3c);
+    color: white;
+    border-radius: 5px;
+}
+/* Admin.css */
+.btn-back {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-back:hover {
+    background-color: #0056b3;
+}
